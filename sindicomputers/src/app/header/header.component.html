@@ -1,0 +1,35 @@
+<header class="main-header">
+  <h1 class="main-header__title">
+    <span class="main-header__title--blue">Sindicato</span>
+    <span class="main-header__title--orange"> Computers</span>
+  </h1>
+  <div class="container-menu">
+    <nav class="main-header__menu">
+      <ul>
+        <li>
+          <a routerLink="produtos">Produtos</a>
+        </li>
+        <li>
+          <a routerLink="carrinho">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Carrinho
+            <span class="badge-carrinho"> {{ carrinhoService.obtemCarrinho().length}} </span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="contato">Contato</a>
+        </li>
+        <li>
+          <a href="https://discord.gg/RjdrnP27" target="blank"><i class="fa-brands fa-discord"></i></a>
+        </li>
+        <li>
+          <a href="https://github.com/danmachinez" target="blank"><i class="fa-brands fa-github"></i></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/dmachinez/" target="blank"><i class="fa-brands fa-linkedin"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <app-barra-de-pesquisa></app-barra-de-pesquisa>
+  </div>
+</header>
